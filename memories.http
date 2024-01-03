@@ -1,1 +1,29 @@
 GET http://localhost:3333/memories
+
+###
+GET http://localhost:3333/memories/f84ff5c4-329e-4849-86e9-fd0012e86a21
+
+###
+POST http://localhost:3333/memories
+Content-Type: application/json
+
+{
+  "content": "teste",
+  "coverUrl": "http://github.com/brunofelipehp.png",
+    "isPublic": "1"
+}
+
+
+###
+PUT  http://localhost:3333/memories/fd1a1ca0-81f8-40bc-bd64-d7403dd0e201
+Content-Type: application/json
+
+{
+  "content": "New Memory 03",
+  "coverUrl": "http://github.com/brunofelipehp.png",
+    "isPublic": "1"
+}
+
+
+###
+DELETE http://localhost:3333/memories/76c25e51-a64c-4ad7-91f3-1e7179fbcdd9
